@@ -20,10 +20,7 @@ Nominal resistor values: R1=2k ohms, R2=1k ohms. Actual resistance determined us
 Capacitor value: 100nF
 
 # Components Used
-Board: Raspberry Pi Pico H
-
-IC: Adafruit SSD1306 OLED
-
-Components: 1 capacitor & 2 resistors
-
-Power Supply: 3800mAH 7.2V GEILIENERGY NIMH Battery
+* **Board:** Raspberry Pi Pico H 
+* **IC:** Adafruit SSD1306 OLED
+* **Components:** 1 capacitor & 2 resistors
+* **Power Supply:** 3800mAH 7.2V GEILIENERGY NIMH Battery
