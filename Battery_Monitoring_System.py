@@ -35,10 +35,11 @@ oled.text("Espinoza",65,10)
 oled.text("Battery USC",20,30) # Usable System Capacity
 
 while True:
-    v_out=adc.read_u16()*3.23/65536
+    raw_adc=adc.read_u16()
+    v_out=raw_adc*3.23/65536
     v_in=v_out*59/20 #calculated using actual resistor values
     print("*************************")
-    print("ADC reading:", adc.read_u16())
+    print("ADC reading:", raw_adc)
     print("Voltage output:"+str(v_out)+"V")
     print("Voltage input:"+str(v_in)+"V")
     print("Battery Percentage:"+str(battery_percent(v_in))+"%")
